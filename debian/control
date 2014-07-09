@@ -1,0 +1,18 @@
+Source: php-lz4
+Section: php
+Priority: optional
+Maintainer: Mathis Klooss <mathis.klooss@mage-profis.de>
+Uploaders: Mathis Klooss <mathis.klooss@mage-profis.de>
+Build-Depends: debhelper (>= 9),
+    php5-dev (>= 5.5),
+    dh-php5,
+    php5-cli
+Standards-Version: 3.9.5
+Homepage: https://github.com/kjdev/php-ext-lz4
+
+Package: php5-lz4
+Architecture: any
+Pre-Depends: dpkg (>= 1.15.7.2)
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${php:Depends}
+Recommends: ${misc:Recommends}
+Description: LZ4 compression

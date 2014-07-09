@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+# Moved config file
+dpkg-maintscript-helper mv_conffile \
+    /etc/php5/conf.d/lz4.ini /etc/php5/mods-available/lz4.ini 2.0.0-2 php5-lz4 -- "$@"
+
+#DEBHELPER#
+
+exit 0
+
